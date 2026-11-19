@@ -10,8 +10,8 @@
 但缺少「跨页 utp 让 `compat_get_timex` 返回 -EFAULT 从而跳过 `do_adjtimex`」这个关键修补。
 本目录是把该已验证实现移植到 RMX3031 的结果。
 
-**所有设备相关偏移均由 `C:/Users/1101/Downloads/vmlinux.elf`（与设备实测内核逐字一致，
-即 `F:/PhoneBackup/GTNeo_A31_bk/boot.bin`）反汇编 + `.rela.dyn` 重定位表实测得出，
+**所有设备相关偏移均由 `vmlinux.elf`（与设备实测内核逐字一致，
+即 `boot.bin`）反汇编 + `.rela.dyn` 重定位表实测得出，
 没有照抄参考机的数字。**
 
 ## 可行性：栈几何逐条反汇编确认（决定性）
